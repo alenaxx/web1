@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Weather
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.min.js")
+        link(rel="stylesheet" href="../stylus/style.css")
+        script#city(type="text/x-handlebars-template").
+            <div class="main-form">
+            <h1 class="city">{{city}}</h1>
+            <h2 class="info">
+            {{weather}}
+            </h2>
+            </div>
+            <ul class="weatherForecast ">
+            <div class="weatherElement ">
+            <h2>Дата</h2>
+            <div>{{date}}</div>
+            </div>
+            <div class="weatherElement ">
+            <h2>Температура</h2>
+            <div>{{temperature}} C</div>
+            </div>
+            <div class="weatherElement ">
+            <h2>Влажность</h2>
+            <div>{{humidity}} %</div>
+            </div>
+            <div class="weatherElement ">
+            <h2>Давление</h2>
+            <div>{{pressure}} hPa </div>
+            </div>
+            <div class="weatherElement ">
+            <h2>Ветер</h2>
+            <div>{{wind}} m/s</div>
+            </div>
+            </ul>
+        script#error(type="text/x-handlebars-template").
+            <div class="form">
+            <h1 class="errorMessage">Please input correct city name!</h1>
+            </div>
+    body
+        main.main
+            h1 Weather
+            .searchLine
+                form(action="#" onsubmit="update()")
+                    input#input.find(type="text")
+                    input.search(type="submit" value="Search")
+            #result.weather
+        script(src="../scripts/sc.js")
+
