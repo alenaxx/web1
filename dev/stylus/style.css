@@ -1,30 +1,32 @@
 html,
 h1 {
-  font-size: 50px;
-  font-weight: lighter;
-  font-family: serif;
-  text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: serif;
+    text-align: center;
 }
+
 body {
-  background: #f5f5dc;
+    background: #f5f5dc;
 }
 
 .searchLine .find {
-  width: 20%;
+    width: 20%;
 
 }
 
 .weatherForecast {
-  margin-top: 40px;
-  height: 60px;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+    margin-top: 40px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .weatherElement {
-  height: 20px;
-  width: 20%;
-  text-align: center;
-  font: 15px Tahoma, Arial, align-self;
-  color: #000;
+    height: 20px;
+    width: 20%;
+    text-align: center;
+    font: 15px Tahoma, Arial, align-self;
+    color: #000;
 }
