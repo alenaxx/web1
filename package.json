@@ -1,18 +1,21 @@
 {
-  "name": "untitled",
+  "name": "web1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dev/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha-chrome dev/index.html"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "pug": "^2.0.4"
-  },
   "dependencies": {
-    "pug-cli": "^1.0.0-alpha6"
+    "chai": "^4.2.0",
+    "connect": "^3.7.0",
+    "lib.cli": "^4.9.5",
+    "mocha": "^6.2.2",
+    "mocha-chrome": "^2.2.0",
+    "phantom": "^6.3.0",
+    "serve-static": "^1.14.1",
+    "sinon": "^7.5.0"
   }
 }
